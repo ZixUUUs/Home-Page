@@ -183,3 +183,95 @@ p {
   width: 20px;
   height: 10px;
 }
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .infoBox {
+    width: 300px;
+    text-align: center;
+  }
+  .boxText {
+    align-self: none;
+  }
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+  }
+  .Me {
+    width: 300px;
+    z-index: 0;
+    margin-bottom: 10px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .meContact {
+    width: 300px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .infoBox {
+    width: 400px;
+  }
+  .infoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 20px;
+  }
+  .infoTitle {
+    text-align: center;
+  }
+  .icons {
+    align-self: center;
+  }
+  .Me {
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    left: 50px;
+    top: 230px;
+  }
+  .meContact {
+    width: 200px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .infoBox {
+    width: 400px;
+  }
+  .infoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 20px;
+  }
+  .infoTitle {
+    text-align: center;
+  }
+  .icons {
+    align-self: center;
+  }
+  .Me {
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    left: 100px;
+    top: 230px;
+  }
+  .meContact {
+    width: 200px;
+    margin-left: 10px;
+  }
+}
