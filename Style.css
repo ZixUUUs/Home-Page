@@ -3,6 +3,8 @@
 *,
 *:before,
 *:after {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -43,7 +45,7 @@ header::before {
   flex: 0.5;
   max-width: 30%;
   max-height: 40%;
-
+  position: relative;
   padding: 5px;
   border-radius: 5px;
   margin: 0;
@@ -117,8 +119,9 @@ header::before {
   justify-content: end;
   position: relative;
 }
-#projectTitle {
+.projectTitle {
   text-align: center;
+  margin: 5%;
 }
 
 .cardPic {
@@ -209,10 +212,16 @@ footer::before {
   max-height: 100%;
   object-fit: fill;
 }
-
+.contactTitle {
+  padding: 10%;
+  padding-left: 0;
+  white-space: nowrap;
+}
 .textContact {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   margin-left: 5vw;
 }
 
@@ -225,17 +234,27 @@ p {
   font-size: 1rem;
   line-height: 1.6;
 }
-#contactUs {
+.contactUs {
   color: #fff;
 }
 
 @media screen and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
   .aboutMe {
     flex-direction: column;
   }
   .infoBox {
     box-shadow: none;
     min-height: 50vh;
+  }
+  .infoBox .icon {
+    width: 80%;
+    height: 8vh;
+    padding: 5px;
+    margin-top: 20px;
   }
   .infoTitle {
     text-align: center;
@@ -252,10 +271,9 @@ p {
   }
   .name {
     position: absolute;
-    font-size: 2rem;
-    top: 45%;
-    left: 13%;
-    z-index: 3;
+    font-size: 2.2rem;
+    z-index: 2;
+    margin-top: 20%;
   }
   .icons {
     justify-content: center;
@@ -263,13 +281,34 @@ p {
   .project {
     margin: 0;
   }
+  .projectTitle {
+    padding: 10px;
+    text-align: center;
+  }
   .myProject {
     flex-direction: column;
     justify-content: center;
   }
   .pDiv {
-    max-width: 100%;
-    margin-left: 0;
+    max-width: 95%;
+  }
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactTitle {
+    text-align: center;
+    padding: 3%;
+  }
+  .textContact {
+    line-height: 2;
+    padding: 5%;
+  }
+  .meContact {
+    align-self: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 /*
