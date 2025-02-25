@@ -238,7 +238,7 @@ p {
   color: #fff;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   * {
     margin: 0;
     padding: 0;
@@ -271,7 +271,7 @@ p {
   }
   .name {
     position: absolute;
-    font-size: 2.2rem;
+    font-size: 6vw;
     z-index: 2;
     margin-top: 20%;
   }
@@ -311,64 +311,3 @@ p {
     margin: 0;
   }
 }
-/*
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .infoBox {
-    width: 400px;
-  }
-  .infoText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 60%;
-    padding: 20px;
-  }
-  .infoTitle {
-    text-align: center;
-  }
-  .icons {
-    align-self: center;
-  }
-  .Me {
-    position: absolute;
-    height: 250px;
-    width: 200px;
-    left: 50px;
-    top: 230px;
-  }
-  .meContact {
-    width: 200px;
-    margin-left: 10px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .infoBox {
-    width: 400px;
-  }
-  .infoText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 60%;
-    padding: 20px;
-  }
-  .infoTitle {
-    text-align: center;
-  }
-  .icons {
-    align-self: center;
-  }
-  .Me {
-    position: absolute;
-    height: 250px;
-    width: 200px;
-    left: 100px;
-    top: 230px;
-  }
-  .meContact {
-    width: 200px;
-    margin-left: 10px;
-  }
-}
-*/
