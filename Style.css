@@ -372,3 +372,17 @@ p {
     min-width: 50vw;
   }
 }
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .name {
+    top: 86%;
+    left: 6%;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .name {
+    top: 86%;
+    left: 6%;
+    font-size: 2rem;
+  }
+}
